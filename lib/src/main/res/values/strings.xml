@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lib</string>
+    <string name="vertify_access">验证通过,耗时%d毫秒</string>
+    <string name="vertify_failed">验证失败,还剩%d次机会</string>
+
+    <string name="mode_normal">正常模式</string>
+    <string name="mode_slide">滑动模式</string>
+    <string name="dots_mode_circle">指示器圆形</string>
+    <string name="dots_mode_oval">指示器椭圆</string>
+    <string name="isdots_bg">指示器背景是否显示</string>
+    <string name="number">图片数量</string>
+    <string name="scrollduration">ViewPager切换速率</string>
+    <string name="autotime">自动滚动时间</string>
+    <string name="ok">确定</string>
+</resources>

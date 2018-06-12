@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- style="?android:attr/progressBarStyleSmall" -->
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            style="@style/pull_to_fresh_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pull_to_refresh_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:src="@mipmap/pull_to_refresh_arrow_down"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="260dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pull_to_refresh_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="下拉刷新"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pull_to_refresh_updated_at"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5px"
+        android:background="#d2d2d2" />
+
+</LinearLayout>

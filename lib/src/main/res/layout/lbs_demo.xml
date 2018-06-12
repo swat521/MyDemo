@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="定位测试"
+        android:textColor="@color/app_main_color"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="get_lbs"
+        />
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="消息"
+        android:textColor="@color/app_main_color"
+        android:gravity="center"
+        />
+</LinearLayout>

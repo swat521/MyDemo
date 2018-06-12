@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="0dp"
+    tools:context=".tab.TabDemo"
+    >
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#a0a0a0" />
+    <vip.pk.lib.tab.BottomTabGroup
+        android:id="@+id/bottom_bar_root"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/list_vertical_root_bg"
+        android:orientation="horizontal"
+        android:paddingTop="0dp"
+        android:divider="@drawable/line"
+        android:showDividers="middle"
+        >
+
+        <vip.pk.lib.tab.BottomTab
+            android:id="@+id/tab_01"
+            style="@style/bottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bg"
+            app:drawableTop="@drawable/main_bottombar_icon_home_selector"
+            app:tabText="tab001"/>
+
+        <vip.pk.lib.tab.BottomTab
+            android:id="@+id/tab_02"
+            style="@style/bottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintEnable="false"
+            android:background="@drawable/ripple_bg"
+            app:drawableTop="@drawable/main_bottombar_icon_home_selector"
+            app:tabText="tab002"/>
+
+        <vip.pk.lib.tab.BottomTab
+            android:id="@+id/tab_03"
+            style="@style/bottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintEnable="false"
+            android:background="@drawable/ripple_bg"
+            app:drawableTop="@drawable/main_bottombar_icon_home_selector"
+            app:tabText="tab003"/>
+
+        <vip.pk.lib.tab.BottomTab
+            android:id="@+id/tab_04"
+            style="@style/bottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintEnable="false"
+            android:background="@drawable/ripple_bg"
+            app:drawableTop="@drawable/main_bottombar_icon_home_selector"
+            app:tabText="tab004"/>
+
+    </vip.pk.lib.tab.BottomTabGroup>
+
+
+</RelativeLayout>

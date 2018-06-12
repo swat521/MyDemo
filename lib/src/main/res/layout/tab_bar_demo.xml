@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <!--
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="onTab:1" />
+    <vip.pk.lib.tab_bar.TabBarView
+        android:id="@+id/tabv_tab"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        app:tabv_colorMain="#4577B7"
+        app:tabv_colorSub="#ffffff"
+        app:tabv_duration="250"
+        app:tabv_padding="2px"
+        app:tabv_textSize="14dp"
+        app:tabv_title="TAB1;TAB2;TAB3;TAB4" />
+-->
+
+
+    <!-- 顶部选项卡 -->
+    <vip.pk.lib.tab_bar.TabTopLayout
+        android:id="@+id/home_toptab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- 已发布 -->
+    <LinearLayout
+        android:id="@+id/layout_do"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发布"/>
+
+    </LinearLayout>
+    <!-- 未发布 -->
+    <LinearLayout
+        android:id="@+id/layout_undo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未发布"/>
+
+    </LinearLayout>
+</LinearLayout>

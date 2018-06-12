@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <vip.pk.lib.hdp_view.XBannerView
+        android:id="@+id/xbv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switch_mode"
+            android:gravity="center"
+            android:text="@string/mode_normal" />
+
+        <Switch
+            android:id="@+id/switch_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/switch_mode"
+            android:gravity="center"
+            android:text="@string/mode_slide" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switch_dots_mode"
+            android:gravity="center"
+            android:text="@string/dots_mode_circle" />
+
+        <Switch
+            android:id="@+id/switch_dots_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/switch_dots_mode"
+            android:gravity="center"
+            android:text="@string/dots_mode_oval" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switch_dots_bg"
+            android:gravity="center"
+            android:text="@string/isdots_bg" />
+
+        <Switch
+            android:id="@+id/switch_dots_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <LinearLayout
+            android:id="@+id/num_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/less"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:gravity="center"
+            android:text="@string/number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:gravity="center"
+            android:text="@string/scrollduration" />
+
+        <EditText
+            android:id="@+id/et_scrollduration"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_toLeftOf="@+id/btn_scrollduration"
+            android:gravity="center"
+            android:hint="250"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_scrollduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20dp"
+            android:text="@string/ok" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:gravity="center"
+            android:text="@string/autotime" />
+
+        <EditText
+            android:id="@+id/et_autotime"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_toLeftOf="@+id/btn_autotime"
+            android:gravity="center"
+            android:hint="5000"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_autotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20dp"
+            android:text="@string/ok" />
+    </RelativeLayout>
+</LinearLayout>

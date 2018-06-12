@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<!--
+    <ImageView
+        android:id="@+id/img_curtain_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/curtain_view_ad" />
+-->
+    <LinearLayout
+        android:id="@+id/img_curtain_ad"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#af000000"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设备信息:在基本原则地 国要"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间:2018-05-55"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="速度:60km/h,当日里程:22km"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="方向:东"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址:山东省基本原则地 百枷地aslf罟暴露森罗万象呆"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/img_curtain_rope"
+        android:layout_width="26dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_curtain_ad"
+        android:layout_marginRight="15dip"
+        android:src="@mipmap/curtain_view_shengzi" />
+
+</RelativeLayout>

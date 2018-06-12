@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CountDownProgress">
+
+        <!-- 圆实心的颜色 -->
+        <attr name="circSolidColor" format="color"></attr>
+
+        <!-- 圆边框的颜色 -->
+        <attr name="circFrameColor" format="color"></attr>
+
+        <!-- 进度条的颜色 -->
+        <attr name="progressColor" format="color"></attr>
+
+        <!-- 文字的颜色 -->
+        <attr name="textColor3" format="color"></attr>
+
+    </declare-styleable>
+
+
+
+
+
+
+
+
+    <declare-styleable name="CountDownView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textSize2" format="dimension"/>
+        <attr name="textColor" format="color" />
+        <attr name="countdownTime" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension"/>
+
+        <attr name="loadingColor" format="color"/>
+
+        <attr name="stopColor" format="color"/>
+
+        <attr name="radius" format="dimension"/>
+
+        <attr name="borderWidth" format="dimension"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="TabView">
+        <attr name="tab_textViewSelColor1"
+            format="reference|color"/>
+        <attr name="tab_textViewUnSelColor1"
+            format="reference|color"/>
+        <attr name="tab_tabViewBackgroundColor1"
+            format="reference|color"/>
+        <attr name="tab_tabViewHeight1"
+            format="dimension"/>
+        <attr name="imageViewTextViewMargin1"
+            format="dimension"/>
+        <attr name="tab_textViewSize1"
+            format="dimension"/>
+        <attr name="tab_imageViewWidth1"
+            format="dimension"/>
+        <attr name="tab_imageViewHeight1"
+            format="dimension"/>
+        <attr name="tab_tabViewGravity1">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+        </attr>
+        <attr name="tab_tabViewDefaultPosition1"
+            format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabBarView">
+        <attr name="tabv_title" format="string" />
+        <attr name="tabv_textSize" format="dimension" />
+        <attr name="tabv_colorMain" format="color" />
+        <attr name="tabv_colorSub" format="color" />
+        <attr name="tabv_padding" format="dimension" />
+        <attr name="tabv_paddingSide" format="dimension" />
+        <attr name="tabv_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Captcha">
+        <attr name="src" format="reference"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="mode" format="enum">
+            <enum name="mode_bar" value="1"/>
+            <enum name="mode_nonbar" value="2"/>
+        </attr>
+        <attr name="max_fail_count" format="integer"/>
+        <attr name="blockSize" format="dimension"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MyTabView">
+        <attr name="tab_textViewSelColor"
+            format="reference|color"/>
+        <attr name="tab_textViewUnSelColor"
+            format="reference|color"/>
+        <attr name="tab_tabViewBackgroundColor"
+            format="reference|color"/>
+        <attr name="tab_tabViewHeight"
+            format="dimension"/>
+        <attr name="imageViewTextViewMargin"
+            format="dimension"/>
+        <attr name="tab_textViewSize"
+            format="dimension"/>
+        <attr name="tab_imageViewWidth"
+            format="dimension"/>
+        <attr name="tab_imageViewHeight"
+            format="dimension"/>
+        <attr name="tab_tabViewGravity">
+        <flag name="top" value="0x30" />
+        <flag name="bottom" value="0x50" />
+        <flag name="left" value="0x03" />
+        <flag name="right" value="0x05" />
+        </attr>
+        <attr name="tab_tabViewDefaultPosition"
+            format="integer"/>
+    </declare-styleable>
+    
+     <declare-styleable name="StickyListHeadersListView">
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name = "CameraBridgeViewBase" >
+       <attr name="show_fps" format="boolean"/>
+       <attr name="camera_id" format="integer" >
+          <enum name="any" value="-1" />
+          <enum name="back" value="99" />
+          <enum name="front" value="98" />
+       </attr>
+    </declare-styleable>
+    
+       <declare-styleable name="CropImageView">
+
+        <attr name="guidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BottomTab">
+        <attr name="drawableTop" format="reference"/>
+        <attr name="tabText" format="string|reference"/>
+        <attr name="tabTextColor" format="color|reference"/>
+        <attr name="tabTextSize" format="dimension|reference"/>
+        <attr name="hintText" format="string|reference"/>
+        <attr name="hintTextColor" format="color|reference"/>
+        <attr name="hintTextSize" format="dimension|reference"/>
+        <attr name="hintTextBackground" format="reference"/>
+        <attr name="hintEnable" format="boolean"/>
+        <attr name="verticalSpace" format="dimension|reference"/>
+    </declare-styleable>
+    
+</resources>

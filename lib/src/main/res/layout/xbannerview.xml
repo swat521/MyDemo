@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <vip.pk.lib.hdp_view.XViewPager
+        android:id="@+id/banner_xvp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <FrameLayout
+        android:id="@+id/dots_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/dots_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/dots_slide_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </FrameLayout>
+</merge>

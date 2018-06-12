@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="/sdcard/Download/"/>
+    <external-path name="download" path="Download/"/>
+    <files-path name="filepath" path="."  />
+    <cache-path name="filepath" path="."  />
+</paths>

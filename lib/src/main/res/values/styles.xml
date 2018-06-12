@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 时间选择器对话框样式-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/android:transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+
+    <!-- 自定义样式的name属性用于引用，父亲是默认的style -->
+    <style name="InitProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <!-- 最大高度50dp，最小高度10dp，进度值确定，Drawable样式文件引用 -->
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/init_progressbar</item>
+    </style>
+
+
+
+    <style name="MySeekbarSytle" parent="Base.Widget.AppCompat.SeekBar">
+        <item name="android:thumb">@drawable/thumb</item>
+        <item name="android:progressDrawable">@drawable/po_seekbar</item>
+    </style>
+
+    <style name="bottomTab">
+        <item name="tabTextColor">@drawable/main_bottombar_text_selector</item>
+        <item name="tabTextSize">12sp</item>
+        <item name="hintTextColor">@android:color/white</item>
+        <item name="hintTextSize">3sp</item>
+        <item name="hintTextBackground">@drawable/red_hint</item>
+        <item name="hintEnable">true</item>
+        <item name="verticalSpace">6dp</item>
+    </style>
+
+    <style name="dialog_diy_view">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <!-- 重新主题去掉activity切换的动画效果 -->
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="pull_to_fresh_progressbar">
+
+
+
+        　　                        <item name="android:indeterminateDrawable">@drawable/pull_to_fresh_progress_style</item>
+
+
+
+        　　                        <item name="android:minWidth">32dip</item>
+
+
+
+        　　                        <item name="android:maxWidth">32dip</item>
+
+
+
+        　　                        <item name="android:minHeight">32dip</item>
+
+
+
+        　　                        <item name="android:maxHeight">32dip</item>
+    </style>
+
+
+
+
+
+
+</resources>

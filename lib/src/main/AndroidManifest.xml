@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="vip.pk.lib" >
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android:permission.ACTION_CALL" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--用于写入缓存数据到扩展存储卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+
+
+
+    <application android:name=".base.MyApp">
+        <activity android:name=".base.CrashDialog" />
+        <!-- 列表 -->
+        <activity android:name=".Demo" android:launchMode="singleTask"></activity>
+
+        <!-- splash -->
+
+        <service android:name=".splash.SplashUpdateService" ></service>
+
+        <!--tab-->
+        <!--sport_view-->
+        <activity android:name=".sport_view.SportViewDemo" android:launchMode="singleTask" />
+        <activity android:name=".user.UserLogin" />
+        <activity android:name=".user.UserReg" />
+        <activity android:name=".user.UserResetPwd" />
+        <activity android:name=".about_us.AboutUs" />
+        <activity android:name=".map.LbsDemo" />
+        <activity android:name=".permission.PermissionDemo" />
+        <activity android:name=".webview.MyWebView" />
+        <activity android:name=".pull_to_refresh.PullToRefreshView_demo" />
+        <activity android:name=".db.Db" />
+        <activity android:name="vip.pk.lib.yzm_huadong.YzmHuadongDemo" />
+        <activity android:name=".button.DjsButtonDemo" />
+        <activity android:name=".chart.ChartDemo" />
+        <activity android:name=".clipboard.ResultActivity" android:theme="@android:style/Theme.Dialog"
+            />
+        <activity android:name=".clipboard.ClipboardMonitor" android:launchMode="singleTask" />
+        <activity android:name=".tab_bottom.TabBottomDemo" />
+        <activity android:name=".tab_bar.TabBarDemo" />
+        <activity android:name=".clear_edit_text_view.EditTextDemo" />
+        <activity android:name=".curtain_view.CurtainView_demo" />
+        <activity android:name=".progress_bar.ProgressBarDemo" />
+        <activity android:name=".data_picker.DataPickerDemo" />
+        <activity android:name=".count_down_view.CountDownViewDemo" />
+        <activity android:name=".hdp_view.HdpDemo" />
+
+        <service
+            android:name=".clipboard.ClipboardService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+
+        <!--高德定位-->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="e16dbe179a89f187a4e89e52193e7a50"></meta-data>
+
+        <!--安装文件-->
+        <!--其他的配置项-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--其他的配置项-->
+
+
+
+
+
+
+
+
+
+    </application>
+</manifest>

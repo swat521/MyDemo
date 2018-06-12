@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/first_image_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <vip.pk.lib.count_down_view.CountDownView
+        android:id="@+id/countDownView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        app:roundColor="@color/roundColor"
+        app:backgroundColor="@color/backgroundColor"
+        app:roundProgressColor="@color/roundProgressColor"
+        app:countdownTime="10000"
+        app:roundWidth="3dp"
+        app:textSize="18sp"
+        app:text="点击跳过"
+        app:textColor="@color/textColor"
+        />
+    <com.project.iwork.map.count_down_view.CountDownProgressView
+        android:id="@+id/countdownProgressView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="73dp"
+        android:textSize="14sp"
+        app:circSolidColor = "#00000000"
+        app:progressColor="#20bf63"
+        app:textColor="#20bf63"
+        app:circFrameColor="#00000000"/>
+
+    <LinearLayout
+        android:layout_below="@+id/countDownView"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="开始"
+            android:onClick="onStart"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="停止"
+            android:onClick="onStop"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
